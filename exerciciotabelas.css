@@ -1,5 +1,29 @@
-table,
-th,
-td {
-    border: none;
+/* Faz com que a tabela ocupe 100% da largura da tela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une as bordas das células */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Define a fonte da tabela */
+}
+
+/* Aplica borda às células da tabela */
+table, th, td {
+    border: 1px solid #000;
+}
+
+/* Define o espaçamento interno das células */
+td, th {
+    padding: 2vh;
+    text-align: center; /* Centraliza o texto das células */
+}
+
+/* Define o estilo do cabeçalho da tabela */
+thead {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+/* Define o fundo cinza para linhas pares da tabela */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
